@@ -48,7 +48,7 @@ analytics_id            :
 # - algolia v4 https://www.algolia.com/ - needs further configuration
 # - google custom search engine https://cse.google.es/ 
 search:
-  provider              : lunr #Select a provider for enable search: lunr, algolia, google
+  provider              : algolia #Select a provider for enable search: lunr, algolia, google
   label                 :  #default ["Search"] Text on navbar when search is enabled 
   landing_page          :  #default ["/search"] Link on navbar 
   lunr_maxwords         :  #default [30] lunr only - May slow down your site build
@@ -58,9 +58,9 @@ google_cse_id: #Your cse id
 # This site uses jekyll-algolia plugin https://community.algolia.com/jekyll-algolia/
 # Recommended additional configuration provided, could be modified. Add your own parameters
 algolia:                                                                   
-  application_id        : 
-  index_name            : 
-  search_only_api_key   : 
+  application_id        : KOIKA5PDQO
+  index_name            : netlify
+  search_only_api_key   : 7f1fe42bef3f03458cb3a911ebc7e0ac
   files_to_exclude:         #Optional
     - _layouts/*.html
     - _includes/*.html
