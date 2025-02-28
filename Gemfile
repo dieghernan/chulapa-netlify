@@ -13,3 +13,5 @@ end
 gem 'jekyll-paginate'
 gem 'jekyll-remote-theme'
 gem 'kramdown-parser-gfm'
+gem 'ostruct'
+gem 'faraday-retry'
