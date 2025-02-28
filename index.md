@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Chulapa on remote
+title: Chulapa on Netlify
 header_type: hero
 subtitle: Starter pack
 ---
