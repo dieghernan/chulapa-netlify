@@ -1,6 +1,7 @@
 github: [metadata]
 
-remote_theme: dieghernan/chulapa
+# remote_theme: dieghernan/chulapa
+theme: chulapa-jekyll
 
 # Find errors on this file with http://www.yamllint.com/
 
@@ -143,7 +144,7 @@ googlefonts:
 # Theme and colors
 chulapa-skin: 
   highlight     :  # default["default"]
-  skin         :  listen # Optional predefined skins
+  skin         :  focal # Optional predefined skins
   autothemer    :  true # Bool: Use autotheming
   vars          :    
     primary     : #default ["#007bff"] - Bootstrap blue
