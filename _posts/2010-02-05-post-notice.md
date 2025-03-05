@@ -1,5 +1,5 @@
 ---
-title: "Post: Notice"
+title: "Post: Alert"
 categories:
   - Post Formats
 tags:
@@ -7,27 +7,27 @@ tags:
   - notice
 ---
 
-A notice displays information that explains nearby content. Often used to call attention to a particular detail.
+An alert displays information that explains nearby content. Often used to call attention to a particular detail.
 
-When using Kramdown `{: .notice}` can be added after a sentence to assign the `.notice` to the `<p></p>` element. 
+When using Kramdown `{: .alert}` can be added after a sentence to assign the `.alert` to the `<p></p>` element. 
 
 **Changes in Service:** We just updated our [privacy policy](#) here to better service our customers. We recommend reviewing the changes.
-{: .notice}
+{: .alert}
 
 **Primary Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. [Praesent libero](#). Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-{: .notice--primary}
+{: .alert .alert-primary}
 
 **Info Notice:** Lorem ipsum dolor sit amet, [consectetur adipiscing elit](#). Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-{: .notice--info}
+{: .alert .alert-info}
 
 **Warning Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. [Integer nec odio](#). Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-{: .notice--warning}
+{: .alert .alert-warning
 
 **Danger Notice:** Lorem ipsum dolor sit amet, [consectetur adipiscing](#) elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.
-{: .notice--danger}
+{: .alert .alert-danger}
 
 **Success Notice:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at [nibh elementum](#) imperdiet.
-{: .notice--success}
+{: .alert .alert-success}
 
 Want to wrap several paragraphs or other elements in a notice? Using Liquid to capture the content and then filter it with `markdownify` is a good way to go.
 
@@ -39,7 +39,7 @@ Want to wrap several paragraphs or other elements in a notice? Using Liquid to c
 * Drafts will now auto-save while writing
 {% endcapture %}{% endraw %}
 
-<div class="notice">{% raw %}{{ notice-2 | markdownify }}{% endraw %}</div>
+<div class="alert alert-info">{% raw %}{{ notice-2 | markdownify }}{% endraw %}</div>
 ```
 
 {% capture notice-2 %}
@@ -49,20 +49,20 @@ Want to wrap several paragraphs or other elements in a notice? Using Liquid to c
 * Drafts will now auto-save while writing
 {% endcapture %}
 
-<div class="notice">
+<div class="alert alert-info">
   {{ notice-2 | markdownify }}
 </div>
 
 Or you could skip the capture and stick with straight HTML.
 
 ```html
-<div class="notice">
+<div class="alert alert-info">
   <h4>Message</h4>
   <p>A basic message.</p>
 </div>
 ```
 
-<div class="notice">
+<div class="alert alert-info">
   <h4>Message</h4>
   <p>A basic message.</p>
 </div>
