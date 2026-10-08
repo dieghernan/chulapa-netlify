@@ -1,7 +1,6 @@
 source 'https://rubygems.org'	
 # Latest jekyll release
 gem "jekyll", "~> 4.4.1" 
-# gem "chulapa-jekyll"
 
 group :jekyll_plugins do
   gem 'jekyll-algolia', '~> 1.0'
@@ -16,3 +15,6 @@ gem 'jekyll-remote-theme'
 gem 'kramdown-parser-gfm'
 gem 'ostruct'
 gem 'faraday-retry'
+
+# Standard library dependency required by plugins on Ruby 3.4.
+gem 'fiddle'
