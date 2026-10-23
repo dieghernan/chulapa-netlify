@@ -39,8 +39,8 @@ and identity settings before publishing. Image metadata must describe the actual
 image.
 
 The template uses Fuse.js search, four posts per blog page and a Markdown
-cheatsheet collection. Autotheming is enabled with `lightskyblue` as the primary
-color.
+cheatsheet collection. The `gitdev-dark` skin is selected with autotheming enabled and no custom
+primary color.
 
 ## Page options and examples
 
@@ -79,6 +79,10 @@ remote_theme: dieghernan/chulapa
 The remote theme follows Chulapa's default branch without pinning a release. A
 fresh build downloads the theme from that branch, so rebuilding can pick up
 upstream changes even without editing this repository. The examples have been
-updated for Chulapa 2.1.0.
+updated for Chulapa 2.2.0.
 
 Theme updates do not replace this repository's configuration, content or local overrides. Review the [Chulapa changelog](https://github.com/dieghernan/chulapa/blob/main/CHANGELOG.md) when updating. `bundle update` updates Ruby dependencies, not the remote theme version.
+
+## Chulapa 2.2 examples
+
+Open `/theme-22/` for Mermaid diagrams and a PhotoSwipe gallery. The configuration also lists optional GoatCounter analytics, an author profile URL and a second skin. These settings are blank until you choose to enable them; existing skin and search settings are preserved.
