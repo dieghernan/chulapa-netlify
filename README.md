@@ -1,6 +1,6 @@
 # Chulapa on Netlify
 
-This repository demonstrates the [Chulapa Jekyll theme](https://github.com/dieghernan/chulapa) on [Netlify](https://chulapatest.netlify.app/) using a remote theme.
+This repository demonstrates [Chulapa v2.3.0](https://github.com/dieghernan/chulapa/releases/tag/v2.3.0) on [Netlify](https://chulapatest.netlify.app/) using a remote theme.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9cdb24a4-d2ff-44b3-99a8-4530849ff5e1/deploy-status)](https://app.netlify.com/sites/chulapatest/deploys)
 
@@ -65,7 +65,7 @@ See the complete [page and snippet reference](https://dieghernan.github.io/chula
 - Sample posts, a paginated blog and year, category and tag archives.
 - Markdown and kramdown cheatsheets.
 - A Bootstrap component demo and a 404 page.
-- Fuse.js search, an Atom feed, an RSS feed and a generated sitemap.
+- Fuse.js search, Atom, RSS and JSON Feed, a subscription page at `/subscribe/` and XML and text sitemaps.
 - An optional GitHub Actions workflow for GitHub Pages. Its build sets the project base path automatically.
 - Custom include hooks in [`_includes/custom/`](_includes/custom/) and CSS in [`assets/css/`](assets/css/).
 - Optional Algolia indexing workflow in [`.github/workflows/algolia-search.yml`](.github/workflows/algolia-search.yml).
@@ -73,13 +73,11 @@ See the complete [page and snippet reference](https://dieghernan.github.io/chula
 ## Theme updates
 
 ```yaml
-remote_theme: dieghernan/chulapa
+remote_theme: dieghernan/chulapa@v2.3.0
 ```
 
-The remote theme follows Chulapa's default branch without pinning a release. A
-fresh build downloads the theme from that branch, so rebuilding can pick up
-upstream changes even without editing this repository. The examples have been
-updated for Chulapa 2.2.0.
+The remote theme uses the release tag in `_config.yml`. Change that tag and
+rebuild your site when you want to upgrade.
 
 Theme updates do not replace this repository's configuration, content or local overrides. Review the [Chulapa changelog](https://github.com/dieghernan/chulapa/blob/main/CHANGELOG.md) when updating. `bundle update` updates Ruby dependencies, not the remote theme version.
 
